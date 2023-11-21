@@ -33,7 +33,7 @@ const messages = [
 ]
 
 const getRandomMessage = () => {
-  const randomIndex = Math.floor(Math.random() * arr.length);
+  const randomIndex = Math.floor(Math.random() * messages.length);
   return messages[randomIndex];
 }
 
