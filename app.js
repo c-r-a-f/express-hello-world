@@ -46,7 +46,7 @@ app.post('/conversation/reply', (req, res) => {
     message: {
       type: 'text',
       role: 'assistant',
-      content: `テストメッセージです。${getRandomMessage}`,
+      content: `テストメッセージです。${getRandomMessage()}`,
     },
     canSuggest: 0.5 < Math.random(),
   })
